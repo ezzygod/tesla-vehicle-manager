@@ -121,7 +121,7 @@ def delete_all():
     db.commit()
     return jsonify({"mesaj": "Toate vehiculele au fost sterse"}), 200
 
-# Partea asta s-a schimbat! Trebuie setat asa pentru Railway:
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
