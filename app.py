@@ -20,7 +20,7 @@ db = mysql.connector.connect(
 cursor = db.cursor(dictionary=True)
 
 def schimbare_baterie(data):
-    if data["cicluri_incarcare"] > 1500 or data["sanatate_baterie"] < 70:
+    if data["cicluri_incarcare"] > 1500 or data["sanatate_baterie"] < 65:
         return "Da"
     return "Nu"
 
