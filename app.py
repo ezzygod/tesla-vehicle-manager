@@ -7,7 +7,7 @@ from datetime import date
 
 app = Flask(__name__)
 app.json.sort_keys = False
-CORS(app) # Permite apeluri din browser
+CORS(app)
 
 db = mysql.connector.connect(
     host="zephyr.proxy.rlwy.net",
